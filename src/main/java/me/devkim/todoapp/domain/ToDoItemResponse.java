@@ -8,7 +8,7 @@ public class ToDoItemResponse extends ApiResponse<ToDoItem> {
 
     @Builder
     public ToDoItemResponse(final ToDoItem toDoItem, final List<String> errors) {
-        super(toDoItem);
+        this.setData(toDoItem);
         this.setErrors(errors);
     }
 }
